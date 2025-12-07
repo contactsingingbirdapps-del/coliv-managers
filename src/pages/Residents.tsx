@@ -25,6 +25,7 @@ interface Resident {
 
 const Residents = () => {
   const { user, userProfile } = useAuth();
+
   const [filter, setFilter] = useState("all");
   const [isResidentModalOpen, setIsResidentModalOpen] = useState(false);
   const [residents, setResidents] = useState<Resident[]>([]);
@@ -169,6 +170,7 @@ const Residents = () => {
           onClick={() => setIsResidentModalOpen(true)}
         >
           <Plus className="w-5 h-5 mr-2" />
+          
           Add New Resident
         </Button>
 
